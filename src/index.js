@@ -84,3 +84,11 @@ topContent.children[1].children[1].textContent = siteContent['main-content']['ab
 const callTo = document.querySelector('.cta-text')
 callTo.children[0].textContent = siteContent.cta['h1']
 callTo.children[1].textContent = siteContent.cta['button']
+
+// NAV LINKS
+const navLinks = document.querySelectorAll('nav a')
+const navLinkTexts = Object.values(siteContent.nav)
+navLinks.forEach((link, idx) => {
+  link.textContent = navLinkTexts[idx]
+  link.classList.add('italic')
+})
