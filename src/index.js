@@ -80,3 +80,7 @@ topContent.children[0].children[1].textContent = siteContent['main-content']['fe
 topContent.children[1].children[0].textContent = siteContent['main-content']['about-h4']
 topContent.children[1].children[1].textContent = siteContent['main-content']['about-content']
 
+// CTA
+const callTo = document.querySelector('.cta-text')
+callTo.children[0].textContent = siteContent.cta['h1']
+callTo.children[1].textContent = siteContent.cta['button']
